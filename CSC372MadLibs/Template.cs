@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using CSC372MadLibs.Program;
 
-namespace CSC372MadLibs {
+namespace CSC372MadLibs.Template {
     public class Template {
         private string fileStream = string.Empty;
         private Dictionary<string, string> POSMappings = new Dictionary<string, string>();
@@ -23,6 +24,10 @@ namespace CSC372MadLibs {
 
         public void EnterPOS(string POS, string entry) {
             POSMappings.Add(POS, entry);
+        }
+
+        public void fillTemplate() {
+            for ()
         }
 
         public override string ToString() {
