@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 using CSC372MadLibs.Template;
 
 namespace CSC372MadLibs {
     class Program {
         static string [] partsOfSpeech = new string {"noun", "plnoun", "verb", "adjective", "integer"};
+
         static void Main(string[] args) {
             string templateString = extractTemplate("templates.txt");
             var template = new Template(templateString, extractPOS(templateString));
@@ -26,7 +28,15 @@ namespace CSC372MadLibs {
             return partString.Split(' ');
         }
 
-        static void askForPOS() {
+        static void askForPOS(Template template) {
+            Dictionary<string, string> POS = template.getPOSMappings();
+            var keys = POS.Keys.ToList();
+            foreach (var key in keys) {
+                Console.WriteLine("Enter a {0}: ", key);
+                string input = Console.ReadLine();
+                POS.Add(key, input);
+            }
+                
 
         }
     }
