@@ -5,8 +5,6 @@ using static CSC372MadLibs.Program;
 namespace CSC372MadLibs.Templates {
     public class Template {
         private string fileStream = string.Empty;
-        //private Dictionary<string, List<string>> POSMappings = new Dictionary<string, string>();
-        //private string filledTemplate = string.Empty;
         private string[] template;
         private int currPart = 0;
 
@@ -24,10 +22,12 @@ namespace CSC372MadLibs.Templates {
             if (currPart > template.Length - 1 ) return null;
             bool found = false;
             for (int i = currPart; i < template.Length && !found; i++){
-                if (Char.IsDigit(template[i][0])){
+                if (template[i].Contains('{')){
                     found = true;
                     currPart = i;
-                    return template[i];
+                    char last = template[currPart][template[currPart].Length - 1];
+                    if (last == ',' || last == '.') return template[currPart].Substring(1, template[currPart].Length-3);
+                    return template[currPart].Substring(1, template[currPart].Length-2);
                 }
             }
             currPart = template.Length;
@@ -36,27 +36,16 @@ namespace CSC372MadLibs.Templates {
 
         // Sets the current part of speech to the response
         public void setCurrPart(string response){
-            template[currPart] = response;
+            if (template[currPart][template[currPart].Length - 1] == ',') template[currPart] = response + ",";
+            else if (template[currPart][template[currPart].Length - 1] == '.') template[currPart] = response + ".";
+            else template[currPart] = response;
             currPart++;
         }
-        
-        /*
-        public Dictionary<string, List<string>> GetPOSMappings() {
-            return POSMappings;
-        }
-
-        public void EnterPOS(string POS, string entry) {
-            POSMappings.
-            POSMappings.Add(POS, entry);
-        }
-
-        public void fillTemplate() {
-            for ()
-        }
-        */
 
         public override string ToString() {
-            if (currPart >= template.Length) return fileStream;
+            if (currPart < template.Length) {
+                return fileStream;
+            }
             return String.Join(" ", template);
         }
     }

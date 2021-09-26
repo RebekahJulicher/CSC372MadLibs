@@ -5,12 +5,32 @@ using CSC372MadLibs.Templates;
 
 namespace CSC372MadLibs {
     class Program {
-        static string[] partsOfSpeech = {"noun", "plnoun", "verb", "adjective", "integer"};
+        //static string[] partsOfSpeech = {"noun", "plnoun", "verb", "adjective", "integer"};
 
         static void Main(string[] args) {
             string templateString = extractTemplate("templates.txt");
             var template = new Template(templateString);
-            Console.WriteLine("Hello World from MadLibs!");
+            string playing = "y";
+
+            while (String.Equals(playing, "y")){
+                Console.WriteLine("Welcome to Mad Libs! Would you like to play? y/n: ");
+                playing = Console.ReadLine();
+                while (!String.Equals(playing, "y") && !String.Equals(playing, "n")){
+                    Console.WriteLine("Invalid input! Would you like to play? y/n: ");
+                    playing = Console.ReadLine();
+                }
+                // If we're still playing, play a round
+                if (String.Equals(playing, "y")){
+                    string curr = template.getNextPart();
+                    Console.WriteLine(curr);
+                    while (!String.Equals(curr, null)){
+                        Console.WriteLine("Enter a " + curr + ": ");
+                        template.setCurrPart(Console.ReadLine());
+                        curr = template.getNextPart();
+                    }
+                    Console.WriteLine(template.ToString());
+                }
+            }
         }
 
         // Reads all lines of a template file into a string array, and 
