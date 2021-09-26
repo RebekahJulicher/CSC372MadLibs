@@ -1,0 +1,15 @@
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/bin/Debug/net5.0/CSC372MadLibs.deps.json
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/bin/Debug/net5.0/CSC372MadLibs.runtimeconfig.json
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/bin/Debug/net5.0/CSC372MadLibs.runtimeconfig.dev.json
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/bin/Debug/net5.0/CSC372MadLibs.dll
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/bin/Debug/net5.0/ref/CSC372MadLibs.dll
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/bin/Debug/net5.0/CSC372MadLibs.pdb
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.csproj.AssemblyReference.cache
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.AssemblyInfoInputs.cache
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.AssemblyInfo.cs
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.csproj.CoreCompileInputs.cache
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.dll
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/ref/CSC372MadLibs.dll
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.pdb
+/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/Debug/net5.0/CSC372MadLibs.genruntimeconfig.cache
