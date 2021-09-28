@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/CSC372MadLibs.csproj": {}
+    "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\CSC372MadLibs.csproj": {}
   },
   "projects": {
-    "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/CSC372MadLibs.csproj": {
+    "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\CSC372MadLibs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/CSC372MadLibs.csproj",
+        "projectUniqueName": "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\CSC372MadLibs.csproj",
         "projectName": "CSC372MadLibs",
-        "projectPath": "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/CSC372MadLibs.csproj",
-        "packagesPath": "/Users/rebekahjulicher/.nuget/packages/",
-        "outputPath": "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/",
+        "projectPath": "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\CSC372MadLibs.csproj",
+        "packagesPath": "C:\\Users\\Orlando School\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/rebekahjulicher/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Orlando School\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {
@@ -52,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
