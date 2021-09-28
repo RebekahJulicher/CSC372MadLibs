@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using static CSC372MadLibs.Program;
 
+/**
+Template class that represents the Template Object that we use in our code.
+*/
 namespace CSC372MadLibs.Templates {
     public class Template {
         private string fileStream = string.Empty;
@@ -42,6 +45,10 @@ namespace CSC372MadLibs.Templates {
             currPart++;
         }
 
+        /**
+            C# enables us to redefine the toString method for class. 
+            This allows us to write out the object in human-friendly way
+        */
         public override string ToString() {
             if (currPart < template.Length) {
                 return fileStream;
