@@ -10,20 +10,23 @@ Authors: Orlando Rodriguez
 */
 namespace CSC372MadLibs {
     class Program {
+        // Illustrates array usage
         static string[] validInputs = {"y", "yes", "n", "no"}; // valid inputs as a string array
         static int gamesPlayed = 0; 
         static string longestWord = "";
+        // Dictionary usage
+        static Dictionary<string, int> wordTypes = new Dictionary<string, int>();
 
         /**
         Main method for the class
         */
         static void Main(string[] args) {
             bool running = true;
-
             string playing = String.Empty; // String.Empty is considered good style
             bool valid = false;
 
             // Asks user if they want to play for the first time
+            // Illustrates loop usage, console input reading, and boolean operations
             while (!valid) {
                 Console.WriteLine("\nWelcome to Mad Libs! Would you like to play? y/n: ");
                 playing = Console.ReadLine();
@@ -43,6 +46,7 @@ namespace CSC372MadLibs {
                 running = false;
 
             // Executes as long as the player wants to play
+            // Illustrates more loops and using class methods
             while (running) {
                 printStats(); // prints the statistics
                 gamesPlayed++; // adds to the game counter
@@ -52,7 +56,6 @@ namespace CSC372MadLibs {
                 string templateString = extractTemplate("templates.txt"); // finds a random template from the templates list
                 var template = new Template(templateString); // creates a Template object
                 string curr = template.getNextPart(); // extracts a part-of-speech (POS) from the file
-                //Console.WriteLine(curr);
 
                 // Keeps looping until it is done being filled in
                 while (!String.Equals(curr, null)){
@@ -61,6 +64,9 @@ namespace CSC372MadLibs {
                     if (input.Length > longestWord.Length) // checks if it's the longest word yet
                         longestWord = input;
                     template.setCurrPart(input); // Inserts the input into the given string
+                    // Arithmetic operations
+                    if (wordTypes.ContainsKey(curr)) wordTypes[curr] += 1;
+                    else wordTypes[curr] = 1;
                     curr = template.getNextPart(); // Asks for the next POS
                 }
                 Console.WriteLine(template.ToString());
@@ -99,9 +105,14 @@ namespace CSC372MadLibs {
         // Prints stats
         static void printStats() {
             Console.WriteLine("STATS:");
+            // Illustrates string concatenation
             Console.WriteLine("Games played: " + gamesPlayed);
             Console.WriteLine("Longest word entered: \"" + longestWord + "\", length: " + longestWord.Length);
-            //Console.WriteLine(":"); Here you want to print out the dictionary stuff
+            Console.WriteLine("Number of each type of word entered:");
+            // Illustrates using dictionary key value pairs
+            foreach(KeyValuePair<string, int> pair in wordTypes){
+                Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+            }
         }
     }
 }

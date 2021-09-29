@@ -9,7 +9,7 @@ You don't need the C# extension, but it wouldn't hurt to install it
 Download and install the .NET Core SDK at https://dotnet.microsoft.com/download/dotnet/sdk-for-vs-code
 
 ## Download Repository
-In the terminal, type: `git clone https://github.com/RebekahJulicher/CSC372MadLibs.git`
+(Optional) In the terminal, type: `git clone https://github.com/RebekahJulicher/CSC372MadLibs.git`
 
 # Running
 1. Open repository in VSCode (Directory should be something like: `C:\dev\Repos\CSC372MadLibs\CSC372MadLibs>`)

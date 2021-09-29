@@ -8,6 +8,7 @@ Authors: Orlando Rodriguez
         Rebekah Julicher
 */
 namespace CSC372MadLibs.Templates {
+    // Illustrates creation and usage of class from external file and namespace
     public class Template {
         private string fileStream = string.Empty; // Input template
         private string[] template; // The actual template ready for POS insertion
@@ -20,10 +21,9 @@ namespace CSC372MadLibs.Templates {
             template = fileStream.Split(' '); // splits template into words
         }
 
-        // removed GetFileStream for now because it's covered in ToString
-
         // Gets the next part of speech after the current index
         public string getNextPart(){
+            // Illustrates null handling
             if (currPart > template.Length - 1 ) return null;
             bool found = false;
             // looks through the template for POS's that need input

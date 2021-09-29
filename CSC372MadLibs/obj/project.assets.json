@@ -8,26 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Orlando School\\.nuget\\packages\\": {}
+    "/Users/rebekahjulicher/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\CSC372MadLibs.csproj",
+      "projectUniqueName": "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/CSC372MadLibs.csproj",
       "projectName": "CSC372MadLibs",
-      "projectPath": "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\CSC372MadLibs.csproj",
-      "packagesPath": "C:\\Users\\Orlando School\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\Repos\\CSC372MadLibs\\CSC372MadLibs\\obj\\",
+      "projectPath": "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/CSC372MadLibs.csproj",
+      "packagesPath": "/Users/rebekahjulicher/.nuget/packages/",
+      "outputPath": "/Users/rebekahjulicher/Desktop/School/CSC372/CSC372MadLibs/CSC372MadLibs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Orlando School\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/rebekahjulicher/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -59,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }
